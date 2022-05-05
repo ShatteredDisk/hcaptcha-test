@@ -9,7 +9,7 @@
       function validate(event) {
         event.preventDefault();
         if (!document.getElementById('field').value) {
-          alert('You must add text to the required field');
+          alert('You must add text to the required field.');
         } else {
           hcaptcha.execute();
         }
@@ -23,7 +23,7 @@
   </head>
   <body>
     <form>
-      Name: (required) <input id="field" name="field" />
+      Name: (Required) <input id="field" name="field" />
       <div
         id="hcaptcha"
         class="h-captcha"
